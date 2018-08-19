@@ -11,6 +11,7 @@ import rootReducer from './reducer';
 
 const createStoreWithApplyMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
+
 ReactDOM.render(
 	<Provider store={createStoreWithApplyMiddleware(rootReducer)}>
 		<App />
